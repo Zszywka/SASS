@@ -1,0 +1,37 @@
+/*Promotional section*/
+.promotional {
+  background-color: #787a79;
+  .container {
+  	margin: 10px auto;
+  	width: $width-full;
+  	height: 300px;
+  }
+  [class*="col-"] {
+  	float: $float-left;
+  	min-height: 1px;
+  	@extend .reset;
+  	position: center;
+  }
+  img {
+  	float: $float-right;
+    margin: 50px auto 0;
+  }
+  .text {
+    padding-top: 25px;
+    text-align: left;
+  }
+  h3 {
+  	text-transform: $big-letters;
+  	font-weight: $fat-fonts;
+  	font-size: 30px;
+    word-wrap: break-word;
+  	@extend .promotionalColorAndPadding;
+  }
+  .col-6 {
+    @extend .promotionalColorAndPadding;
+  }
+  .col-2 {
+  	font-style: italic;
+    @extend .promotionalColorAndPadding;
+  }
+}

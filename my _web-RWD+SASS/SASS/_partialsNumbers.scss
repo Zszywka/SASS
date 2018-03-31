@@ -1,0 +1,22 @@
+/*Numbers section*/
+.numbers {
+	ul {
+		text-align: $text-center;
+		width: $width-full;
+	  padding: 0;
+	}
+	.col-3 {
+		list-style-type: $list-none-style;
+	}
+	h2 {
+		font-size: 50px;
+		font-weight: 900;
+		color: $dark-grey;
+		margin: 0 5%;
+	}
+	h4 {
+		color: #00C4E9;
+		text-transform: $big-letters;
+		text-align: $text-center;
+	}
+}

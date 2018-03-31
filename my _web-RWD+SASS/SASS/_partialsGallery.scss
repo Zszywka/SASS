@@ -1,0 +1,41 @@
+/*Gallery*/
+.gallery [class*="col"] {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	&:hover .layer {
+	  opacity: $opcity-visible;
+	  transform: translate(0px, 0px);
+	  z-index: 2;
+	}
+	.layer {
+	  transition: .5s ease;
+	  opacity: $opacity-unvisible;
+	  width: $width-full;
+	  height: $height-full;
+	  position: $absolute-position;
+	  transform: translate(0px, -200px);
+	  top: 0;
+	  left: 0;
+	  text-align: $text-center;
+	  padding-top: 100px;
+	  background-color: rgba(0,0,0, 0.7);
+	}
+	.fa {
+		color: #000;
+		width: 30px;
+		height: 30px;
+		background: $color-white;
+		padding: 5px;
+		margin: 0 20px;
+		@include border-radius(20%);
+	}
+	img {
+		object-fit: cover;
+		transition: .5s ease;
+		width: $width-full;
+		height: 200px;
+		display: $display-block;
+	}
+
+}

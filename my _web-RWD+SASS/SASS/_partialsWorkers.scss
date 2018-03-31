@@ -1,0 +1,40 @@
+/*Workers section*/
+.workers {
+	text-align: $text-center;
+	.outer_img {
+		@include border-radius(50%);
+		width: 180px;
+		height: 180px;
+		position: relative;
+		margin: $margin-auto;
+	}
+	img {
+		@include border-radius(50%);
+		width: 180px;
+		height: 180px;
+		cursor: $cursor;
+		transition-duration: 2s;
+		object-fit: cover;
+		z-index: 1;
+	}
+	.layer {
+		width: $width-full;
+		height: $height-full;
+		position: $absolute-position;
+		top: 0;
+		left: 0;
+		@include border-radius(50%);
+		background: rgba(0,0,0,0.7);
+		opacity: $opacity-unvisible;
+		&:hover {
+		  @extend .center;
+			opacity: $opcity-visible;
+		  color: $color-white;
+		  font-weight: $fat-fonts;
+		}
+	}
+	h4 {
+		color: #95a5a6;
+		text-align: $text-center;
+	}
+}

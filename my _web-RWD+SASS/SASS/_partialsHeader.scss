@@ -1,0 +1,27 @@
+/*Header*/
+header {
+	background-color: $color-grey;
+	height: 50px;
+	img {
+		padding: 10px 0;
+		max-height: 100%;
+    max-width: 100%;
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style-type: $list-none-style;
+		@extend .reset;
+		float: $float-right;
+	}
+	a {
+		color: $color-white;
+		text-transform: $big-letters;
+		text-decoration: none;
+		line-height: 50px;
+		padding: 0 15px;
+		&:hover {
+			color: #00C5EB;
+		}
+	}
+}

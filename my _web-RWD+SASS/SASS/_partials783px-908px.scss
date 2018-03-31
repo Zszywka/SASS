@@ -1,0 +1,34 @@
+@media (min-width: 783px) and (max-width: 908px) {
+	/* for desktop:*/
+  .col-xm-1 {width: 8.33%;}
+  .col-xm-2 {width: 16.66%;}
+  .col-xm-3 {width: 25%;}
+  .col-xm-4 {width: 33.33%;}
+  .col-xm-5 {width: 41.66%;}
+  .col-xm-6 {width: 50%;}
+  .col-xm-7 {width: 58.33%;}
+  .col-xm-8 {width: 66.66%;}
+  .col-xm-9 {width: 75%;}
+  .col-xm-10 {width: 83.33%;}
+  .col-xm-11 {width: 91.66%;}
+  .col-xm-12 {width: 100%;}
+
+	/* promotional */
+  .promotional {
+    [class*="col-"] {
+    	font-size: 2vh;
+    }
+    img {
+      float: right;
+    }
+    .text {
+      padding-left: 30px;
+      text-align: justify;
+    }
+  }
+
+	/* gallery */
+  .gallery .layer .fa {
+    margin-bottom: 10px;
+  }
+}

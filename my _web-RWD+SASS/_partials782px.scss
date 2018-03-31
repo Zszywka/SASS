@@ -1,0 +1,140 @@
+@media (max-width: 782px) {
+  /* For desktop: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+	/* for all */
+  body {
+    max-width: 100%;
+    [class*="col-"] {
+      width: $width-full;
+      float: $float-left;
+      padding: 12px;
+    }
+  }
+
+	/* header */
+  header {
+  	background-color: $color-grey;
+  	height: 50%;
+    ul {
+    	display: $display-block;
+      position: $absolute-position;
+    	float: none;
+      background: $color-grey;
+      text-align: $text-center;
+    }
+  }
+
+  /* hero */
+  .hero {
+    h1 {
+      padding: 0;
+    }
+    .icon-btn {
+      margin: 5%;
+    }
+  }
+
+  /* 3elements */
+  .elements3 {
+    .social {
+      width: $width-full;
+    }
+    .col-4 {
+    	padding-right: 0;
+    }
+  }
+
+  /* nav mini */
+  .nav-mini {
+    h2 {
+      font-size: 25px;
+      margin: 10px 0;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      // margin-bottom: 100px;
+    }
+  }
+
+  /* gallery */
+  .gallery {
+    .layer {
+      opacity: $opcity-visible;
+      background-color: rgba(0,0,0, 0);
+      transform: translate(0px, 0px);
+      z-index: 2;
+    }
+  }
+
+  /* promotional */
+  .promotional {
+    img {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: none;
+      margin: 50px auto 0;
+    }
+    .text {
+      text-align: $text-center;
+    }
+    h3 {
+    	padding-left: 10px;
+    }
+    .col-6 {
+      padding-left: 10px;
+    }
+    .col-2 {
+      margin: 10px auto;
+      padding-left: 10px;
+    }
+  }
+
+  /* numbers */
+  .numbers {
+    .container {
+      margin: auto 0;
+    }
+    ul {
+  		display: $display-block;
+  	}
+  }
+
+	/* footer */
+  footer {
+    [class*="col-"] {
+      text-align: left;
+    }
+    h2 {
+      &::after {
+        width: 100px;
+        height: 3px;
+        margin: 5px;
+      }
+    }
+    .col-3 {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+    .col-7 {
+      padding-left: 0;
+      word-wrap: break-word;
+    }
+  }
+} /*the end @media (max-width: 767px)*/

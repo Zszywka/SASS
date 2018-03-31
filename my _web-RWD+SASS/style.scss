@@ -1,0 +1,88 @@
+/*  the same variables */
+/* color */
+$color-grey: #303232;
+$color-white: #fff;
+$color-blue: #00C8E4;
+$dark-grey: #343635;
+/* other */
+$cursor: pointer;
+$width-full: 100%;
+$height-full: 100%;
+$big-letters: uppercase;
+$float-right: right;
+$float-left: left;
+$margin-auto: 0 auto;
+$text-center: center;
+$fat-fonts: bold;
+$display-block: block;
+$absolute-position: absolute;
+$opcity-visible: 1;
+$opacity-unvisible: 0;
+$list-none-style: none;
+
+/* MIXiny */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* extension of rules */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+}
+// .navmini {
+//   margin: 30px auto;
+// 	line-height: 20px;
+// 	text-align: $text-center;
+// }
+.promotionalColorAndPadding {
+  color: $color-white;
+  padding-left: 50px;
+}
+
+/* Import */
+/* code for icons */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* for all */
+* {
+	box-sizing: border-box;
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+/* import partials GRID */
+ @import 'partialsGrid';
+
+
+/* for all */
+body {
+  @extend .reset;
+	font-family: 'Open Sans', sans-serif;
+	color: #909090;
+}
+/* for section not for all width */
+.container {
+	margin: $margin-auto;
+	width: $width-full;
+	max-width: 1200px;
+}
+
+/* Import of section partials */
+@import 'partialsHeader';
+@import 'partialsHero';
+@import 'partialsElements3';
+@import 'partialsNavmini';
+@import 'partialsGallery';
+@import 'partialsWorkers';
+@import 'partialsPromotionalSection';
+@import 'partialsNumbers';
+@import 'partialsFooter';
+@import 'partialsMobile';

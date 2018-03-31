@@ -1,0 +1,57 @@
+/*Hero/jumbotron*/
+.hero {
+	background-image: url(https://static.pexels.com/photos/18104/pexels-photo.jpg);
+	height: $height-full;
+	min-height: 10px;
+	width: $width-full;
+	background-position: center;
+	background-size: cover;
+	div:first-child {
+		padding-top: 42vh;
+	}
+	h1 {
+		float: $float-right;
+		color: $color-white;
+		text-transform: $big-letters;
+		background-color: rgba(38, 33, 30, 0.8);
+		padding: 30px 250px 30px 30px;
+		font-weight: $fat-fonts;
+		&:first-line {
+			font-weight: 30;
+		}
+	}
+	div:nth-child(2) {
+		padding-top: 45vh;
+	}
+	.row {
+		border: 0;
+		@include border-radius(50%);
+		width: 50px;
+		height: 70px;
+		cursor: $cursor;
+		transition-duration: 2s;
+	}
+	.social {
+		margin: $margin-auto;
+		width: 20vh;
+		text-align: $text-center;
+		padding: 50px 0;
+		.icon-btn {
+			color: $color-white;
+			@include border-radius(50%);
+			width: 20px;
+			height: 20px;
+			border: 0;
+			margin: 10px;
+			cursor: $cursor;
+			font-size: 40px;
+			background-color: #7F7E7C;
+			border: none;
+			transition-duration: 2s;
+			bottom: 10px;
+			&:hover {
+				background-color: $color-white;
+			}
+		}
+	}
+}

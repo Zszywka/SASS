@@ -1,0 +1,36 @@
+/*3th elements section*/
+.elements3 {
+	text-align: $text-center;
+	.row {
+		text-align: justify;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	.social {
+		text-align: $text-center;
+		padding: 20px 0;
+	}
+	.col-4 {
+		&:hover h4 {
+			color: $color-blue;
+		}
+		&:hover .icon-btn {
+			background-color: $color-blue;
+		}
+	}
+	.icon-btn {
+		background-color: $dark-grey;
+		@include border-radius(15%);
+		width: 75px;
+		height: 75px;
+		border: 0;
+		margin: 10px;
+		cursor: $cursor;
+		font-size: 40px;
+		transition-duration: 2s;
+		color: $color-white;
+	}
+	h4 {
+		text-transform: $big-letters;
+	}
+}
